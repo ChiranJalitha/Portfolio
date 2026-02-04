@@ -1,0 +1,54 @@
+---
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title || 'U.K. Chiran Jalitha – Interactive Media Portfolio'}</title>
+    <meta name="description" content="Game Designer, UI/UX Designer & 3D Modeler – BSc Interactive Media" />
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gradient-to-br from-purple-950 via-indigo-950 to-violet-950 text-white antialiased">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-purple-950/70 backdrop-blur-md border-b border-purple-800/40 shadow-lg">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="text-2xl font-bold text-purple-300 hover:text-purple-400 transition-colors">
+          Chiran Jalitha
+        </a>
+
+        <div class="flex gap-8">
+          <a href="/" class="hover:text-purple-300 transition-colors">Home</a>
+          <a href="/about" class="hover:text-purple-300 transition-colors">About</a>
+          <a href="/projects" class="hover:text-purple-300 transition-colors">Projects</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content area with top padding to account for fixed nav -->
+    <main class="flex-grow pt-24">
+      <slot />
+    </main>
+
+    <!-- Footer with social links -->
+    <footer class="py-10 border-t border-purple-900/40 bg-purple-950/50 text-center text-gray-400">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p>© {new Date().getFullYear()} U.K. Chiran Jalitha • Built with Astro + Tailwind</p>
+
+        <div class="flex gap-6">
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="hover:text-purple-300 transition-colors">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" class="hover:text-purple-300 transition-colors">
+            LinkedIn
+          </a>
+          <a href="mailto:chiranjith095@gmail.com" class="hover:text-purple-300 transition-colors">
+            Email
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

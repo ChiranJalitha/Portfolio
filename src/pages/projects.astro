@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/MainLayout.astro';
+---
+
+<Layout title="Projects – U.K. Chiran Jalitha">
+  <main class="flex-grow max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <h1 class="text-5xl md:text-6xl font-bold text-purple-300 mb-6 text-center">
+      Projects Overview
+    </h1>
+    <p class="text-xl text-indigo-200 mb-16 text-center max-w-3xl mx-auto">
+      Showcasing my work in Unreal Engine, Maya 3D modeling, UI/UX design, and interactive concepts.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+  <!-- The Wizard Trials -->
+  <div class="group bg-purple-950/50 border border-purple-800/40 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-600/50 hover:-translate-y-3 hover:scale-[1.02]">
+    <div class="h-56 overflow-hidden">
+      <img
+        src="/WizardTrials.png" 
+        alt="The Wizard Trials - main scene or environment shot"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+    </div>
+    <div class="p-6">
+      <h3 class="text-2xl font-semibold text-purple-300 mb-3">The Wizard Trials</h3>
+      <p class="text-gray-300 mb-4 line-clamp-3">
+        Harry Potter-inspired level in Unreal Engine 4.27. Focused on immersive atmosphere, lighting, and thematic concepts.
+      </p>
+      <a href="/projects/wizard-trials" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">
+        View Details →
+      </a>
+    </div>
+  </div>
+
+  <!-- 3D Home Theater Room -->
+  <div class="group bg-purple-950/50 border border-purple-800/40 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-600/50 hover:-translate-y-3 hover:scale-[1.02]">
+    <div class="h-56 overflow-hidden">
+      <img
+        src="/HomeTheater.png"
+        alt="3D Home Theater Room - interior render with screen and speakers"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+    </div>
+    <div class="p-6">
+      <h3 class="text-2xl font-semibold text-purple-300 mb-3">3D Home Theater Room</h3>
+      <p class="text-gray-300 mb-4 line-clamp-3">
+        Conceptual Maya 3D scene emphasizing lighting, modeling details, and cozy entertainment space design.
+      </p>
+      <a href="/projects/3d-home-theater" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">
+        View Details →
+      </a>
+    </div>
+  </div>
+
+      <!-- Game-Verse UI -->
+      <div class="group bg-purple-950/50 border border-purple-800/40 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-600/50 hover:-translate-y-3 hover:scale-[1.02]">
+        <div class="h-56 overflow-hidden">
+      <img
+        src="/Game-Verse2.jpeg"
+        alt="Game Verse UI - mobile app interface showcasing game info"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+    </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-purple-300 mb-3">Game-Verse UI</h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Mobile app interface design showcasing game-related info with consistent dark theme and futuristic elements.
+          </p>
+          <a href="/projects/game-verse-ui" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">
+            View Details →
+          </a>
+        </div>
+      </div>
+
+      <!-- 3D Smart Watch -->
+      <div class="group bg-purple-950/50 border border-purple-800/40 rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-600/50 hover:-translate-y-3 hover:scale-[1.02]">
+        <div class="h-56 overflow-hidden">
+      <img
+        src="/3D_SmartWatch.jpg"
+        alt="3D Smart Watch - detailed render of a futuristic smartwatch"
+        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+    </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-purple-300 mb-3">3D Smart Watch</h3>
+          <p class="text-gray-300 mb-4 line-clamp-3">
+            Advanced Maya modeling project focusing on geometry, texturing, lighting, and product visualization.
+          </p>
+          <a href="/projects/3d-smart-watch" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">
+            View Details →
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

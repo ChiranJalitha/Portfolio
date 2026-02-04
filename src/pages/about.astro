@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/MainLayout.astro';  // we'll create this next
+---
+
+<Layout title="About Me – U.K. Chiran Jalitha">
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-16 md:py-24">
+    <h1 class="text-5xl md:text-6xl font-bold text-purple-300 mb-10 text-center md:text-left">
+      About Me
+    </h1>
+
+    <div class="prose prose-invert prose-lg max-w-none">
+      <p class="text-gray-200 leading-relaxed mb-6">
+        Passionate about using creativity over theory. Aiming to create interactive designs using imagination, techniques, and skills. Learning through experience and pursuing knowledge practically.
+      </p>
+
+      <h2 class="text-3xl font-semibold text-purple-400 mt-12 mb-6">Skills / Tools</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+        <li class="bg-purple-950/40 p-4 rounded-lg border border-purple-800/30">Creative Skills: UI/UX Design, Color combinations, consistent themes</li>
+        <li class="bg-purple-950/40 p-4 rounded-lg border border-purple-800/30">Game Development: Unreal Engine</li>
+        <li class="bg-purple-950/40 p-4 rounded-lg border border-purple-800/30">3D Modeling: Autodesk Maya</li>
+        <li class="bg-purple-950/40 p-4 rounded-lg border border-purple-800/30">Frameworks & Tools: React.js, Node.js, Express.js, Android Studio, Figma, Git & GitHub</li>
+      </ul>
+
+      <h2 class="text-3xl font-semibold text-purple-400 mt-12 mb-6">Interests</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-300 pl-6">
+        <li>Game Design</li>
+        <li>UI/UX Design</li>
+        <li>Level Design</li>
+        <li>3D Modeling</li>
+        <li>Drawing / Concept Art</li>
+      </ul>
+    </div>
+  </main>
+</Layout>
