@@ -1,9 +1,10 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";  // if you have it
+import tailwind from "@astrojs/tailwind";  // keep if you have this line
 
 export default defineConfig({
-  site: 'https://chiranjalitha.github.io/Portfolio/',              // ← your GitHub username
-  base: '/Portfolio/',                                 // ← exact repo name with slashes!
-  integrations: [tailwind()],                          // keep if you have Tailwind
-  // ... any other config
+  site: 'https://chiranjalitha.github.io',
+  base: '/Portfolio/',  // ← exact repo name with slashes! Case-sensitive
+  trailingSlash: 'always',  // optional but helps consistency
+  integrations: [tailwind()],  // keep your Tailwind integration
+  // ... any other config you have
 });
